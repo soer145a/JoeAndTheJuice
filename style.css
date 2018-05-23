@@ -14,7 +14,7 @@
 
 .menu {
 	height: 40px;
-	width: 505px;
+	width: 585px;
 
 	background: #4c4e5a;
 	background: -webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
@@ -134,4 +134,8 @@ h1 {
 body {
 	background-color: lightgrey;
 	font-family: 'Josefin Sans', sans-serif;
+}
+
+video {
+	width: 40vw;
 }
