@@ -1,127 +1,137 @@
 .logo_kea {
-    width: 350px;
+	width: 350px;
 }
 
-/* Navigation */
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #4c4e5a;
-    background: #4c4e5a;
-    background: -webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
-    background: -moz-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
-    background: -o-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
-    background: -ms-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
-    background: linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
-
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
 }
 
-ul.topnav li {
-    float: left;
+.menu {
+	height: 40px;
+	width: 505px;
+
+	background: #4c4e5a;
+	background: -webkit-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+	background: -moz-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+	background: -o-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+	background: -ms-linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+	background: linear-gradient(top, #4c4e5a 0%, #2c2d33 100%);
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
-
-
-ul.topnav li a {
-    display: block;
-    padding: 0 14px;
-    margin: 6px 0;
-    line-height: 28px;
-    text-decoration: none;
-
-    border-left: 1px;
-    border-right: 1px;
-
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-
-    color: #f3f3f3;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-
-    -webkit-transition: color .2s ease-in-out;
-    -moz-transition: color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out;
-    -ms-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
-}
-
-ul.topnav li a:hover:not(.active) {
-    background-color: #F4BED8;
-}
-
-ul.topnav li a.active {
-    background-color: rgba(8, 8, 8, 0.21);
+.menu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	height: 40px;
 }
 
 
-.topnav ul {
-
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    list-style: none;
-    padding-left: 0;
-    background: #1f2024;
 
 
+.menu li:first-child a {
+	border-left: none;
 }
 
-.topnav ul li {
-    position: relative;
-
-    margin-right: 5px;
+.menu li:last-child a {
+	border-right: none;
 }
 
-.dropdown > ul {
-    display: none;
-    position: absolute;
-    background-color: rgba(244, 190, 216, 0.92);
-    box-shadow: 0px 8px 16px 0px rgba(244, 190, 216, 0.21);
-    padding: 5px 5px;
-    z-index: 1;
-
-
+.menu li:hover a {
+	color: #8fde62;
 }
 
-.dropdown > ul li {
-    white-space: nowrap;
-    padding: 3px 3px;
+.menu li a {
+	display: block;
+	padding: 0 14px;
+	margin: 6px 0;
+	line-height: 28px;
+	text-decoration: none;
 
+	border-left: 1px solid #393942;
+	border-right: 1px solid #4f5058;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+
+	color: #f3f3f3;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 
-.dropdown:hover > ul {
-    display: block;
+.menu ul {
+	position: absolute;
+	top: 40px;
+	left: 0;
+
+	opacity: 0;
+	background: #1f2024;
+
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+
+	-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;
+	transition: opacity .25s ease .1s;
 }
 
-.topnav img {
-    height: 50px;
-    width: 50px;
-
-
+.menu li:hover ul {
+	opacity: 1;
 }
 
-/* Navigation slut */
+.menu ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+
+	-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;
+	transition: height .25s ease .1s;
+}
+
+.menu li:hover ul li {
+	height: 36px;
+	overflow: visible;
+	padding: 0;
+}
 
 p {
-    font-size: 1.4em;
-    font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.4em;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 footer {
-    font-size: 1.4em;
-    font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.4em;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
-    font-size: 2em;
-    font-family: 'Josefin Sans', sans-serif;
+	font-size: 2em;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
-    background-color: lightgrey;
-    font-family: 'Josefin Sans', sans-serif;
+	background-color: lightgrey;
+	font-family: 'Josefin Sans', sans-serif;
 }
