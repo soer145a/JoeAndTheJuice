@@ -61,9 +61,9 @@
 	border-left: 1px solid #393942;
 	border-right: 1px solid #4f5058;
 
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: besom_2regular, sans-serif;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 15px;
 
 	color: #f3f3f3;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
@@ -138,4 +138,13 @@ body {
 
 video {
 	width: 40vw;
+}
+
+@font-face {
+	font-family: 'besom_2regular';
+	src: url('assets/besom-handwritten-brush-font-webfont.woff2') format('woff2'),
+	url('assets/besom-handwritten-brush-font-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
 }
