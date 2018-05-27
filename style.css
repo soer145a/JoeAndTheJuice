@@ -143,6 +143,9 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	background-repeat: ;
 	background-size: 110%;
+	height: 100%;
+	margin-bottom: 1vw;
+
 }
 
 video {
